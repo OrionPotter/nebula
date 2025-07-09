@@ -1,0 +1,42 @@
+[project]
+name = "stock_analyzer"
+version = "0.1.0"
+description = "A comprehensive toolkit for retrieving and analyzing Chinese stock market data"
+readme = "README.md"
+requires-python = "==3.13.3"
+dependencies = [
+    "dotenv>=0.9.9",
+    "pandas>=2.3.1",
+    "redis>=6.4.0",
+    "requests>=2.32.4",
+    "ta>=0.11.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "flake8>=5.0.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+[tool.coverage.run]
+source = ["src"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
