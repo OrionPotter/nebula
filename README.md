@@ -20,12 +20,12 @@ This toolkit provides a comprehensive set of modules for retrieving and analyzin
 
 | Module | Description |
 |--------|-------------|
-| `stock_analyzer.core.realtime_quote` | Retrieves real-time tick data (五档报价) |
-| `stock_analyzer.core.history_quote` | Fetches historical price data (daily/weekly/monthly/minute) |
-| `stock_analyzer.core.board_quote` | Gets sector and concept board performance data |
-| `stock_analyzer.core.hot_rank` | Retrieves popular stock rankings |
-| `stock_analyzer.core.indicators` | Calculates technical indicators and provides trading signals |
-| `stock_analyzer.core.stock_info` | Retrieves company information and fundamentals |
+| `nebula.core.realtime_quote` | Retrieves real-time tick data (五档报价) |
+| `nebula.core.history_quote` | Fetches historical price data (daily/weekly/monthly/minute) |
+| `nebula.core.board_quote` | Gets sector and concept board performance data |
+| `nebula.core.hot_rank` | Retrieves popular stock rankings |
+| `nebula.core.indicators` | Calculates technical indicators and provides trading signals |
+| `nebula.core.stock_info` | Retrieves company information and fundamentals |
 
 ## Installation
 
