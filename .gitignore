@@ -1,15 +1,53 @@
-# Python-generated files
+# ==========================
+# Python
+# ==========================
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
 *.py[oc]
+*.so
+
+# Distribution / packaging
 build/
 dist/
 wheels/
-*.egg-info
-.python-version
-IFLOW.md
-logs/
+.eggs/
+*.egg-info/
+
+# Lock files (应用项目才需要，开源库一般不提交)
+uv.lock
+
+# SQLite / local databases
 *.db
 
+# Logs
+logs/
+*.log
+
+# Coverage / test / type-checking
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ==========================
 # Virtual environments
-.venv
+# ==========================
+.venv/
+venv/
+env/
 .env
+.python-version
+
+# ==========================
+# Editor / OS
+# ==========================
+.idea/
+.vscode/
+.DS_Store
+
+# ==========================
+# Project-specific (可选)
+# ==========================
+IFLOW.md
